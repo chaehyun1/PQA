@@ -1,0 +1,9 @@
+openai>=1.0
+pandas
+numpy
+tqdm
+requests
+# optional: SimUSER perception module (MovieLens poster captions)
+torch
+transformers
+Pillow
