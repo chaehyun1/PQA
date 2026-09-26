@@ -34,18 +34,6 @@ SimUSER/
 └── CDs_and_Vinyl/                    # same layout (no perception step)
 ```
 
-## Where PQA lives in the code
-
-| Component | Paper | Code |
-|---|---|---|
-| Top-K categories (K = 5) | §2.1.2 | `Agent4Rec/*/1_extract_top_k_genres.py` |
-| Anchor `μ_u` = Σ_i w_i · overlap_i, w_i ∝ γ^i (γ = 0.9, session window 10) | Eq. 1–2 | `Agent4Rec/*/2_session_baseline.py` |
-| Page overlap and ratio (page_overlap / μ_u) | §3 | `compute_page_overlap` in the simulation scripts |
-| ABOVE / NORMAL / BELOW labels | §3, footnote 1 | `classify_page_quality`: thresholds (1.0, 0.7) for MovieLens and (0.5, 0.3) for CDs |
-| Quality-gated exit rules | §3 | Agent4Rec: `next_page_behavior`; SimUSER: `BrainModule._preference_block_facts`, injected into `action_selection` and `causal_refinement` |
-
-The anchor files are shared by both simulators: SimUSER reads the `user_top_k_*.json` and `session_baseline_w10.json` produced by the Agent4Rec scripts (pass them with `--top_k_path` / `--baseline_path`, or copy them into `SimUSER/<dataset>/result/`).
-
 ## Setup
 
 ```bash
