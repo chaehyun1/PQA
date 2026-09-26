@@ -1,6 +1,6 @@
 # A Behavioral Trait Leaks into Preferences: Diagnosing Trait Interference in LLM User Simulators
 
-Official code for **"A Behavioral Trait Leaks into Preferences: Diagnosing Trait Interference in LLM User Simulators"** (CIKM 2026).
+Official code for **"A Behavioral Trait Leaks into Preferences: Diagnosing Trait Interference in LLM User Simulators"** (CIKM 2026 short paper).
 
 LLM user simulators inject a behavioral *activity* trait that is meant to control only how long a user browses. In practice, amplifying activity makes the simulator accept preference-mismatched items to keep browsing (**trait interference**), and satisfaction scores inflate with page count (**evaluation invalidity**).
 PQA fixes this by giving the simulator a personalized page-level quality anchor `μ_u`, computed from the user's own history. Each page is labeled ABOVE / NORMAL / BELOW against this anchor before the continue-or-exit decision, so activity modulates browsing depth only within preference-conforming pages.
