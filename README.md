@@ -1,4 +1,4 @@
-# PQA: Page-level Quality Anchor
+# A Behavioral Trait Leaks into Preferences: Diagnosing Trait Interference in LLM User Simulators
 
 Official code for **"A Behavioral Trait Leaks into Preferences: Diagnosing Trait Interference in LLM User Simulators"** (CIKM 2026).
 
