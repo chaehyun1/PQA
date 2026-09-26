@@ -76,8 +76,6 @@ python 2_session_baseline.py
 python 3_simulations_inference.py --rec_ratio 1to1
 ```
 
-`--flip_personality activity` flips the activity trait (low ↔ high) while keeping preference traits fixed.
-
 ### SimUSER + PQA
 
 ```bash
@@ -108,7 +106,3 @@ Simulation logs and summary statistics (P_view, N_exit, S_sat) are written under
   doi       = {10.1145/3799682.3839914}
 }
 ```
-
-## Acknowledgements
-
-This code builds on [Agent4Rec](https://github.com/LehengTHU/Agent4Rec) and SimUSER.
