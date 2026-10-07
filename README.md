@@ -98,5 +98,11 @@ Simulation logs and summary statistics (P_view, N_exit, S_sat) are written under
 ## Citation
 
 ```bibtex
+@article{kim2026behavioral,
+  title={A Behavioral Trait Leaks into Preferences: Diagnosing Trait Interference in LLM User Simulators},
+  author={Kim, Chaehyun and Kim, Sein and Kang, Hongseok and Park, Chanyoung},
+  journal={arXiv preprint arXiv:2609.25572},
+  year={2026}
+}
 
 ```
